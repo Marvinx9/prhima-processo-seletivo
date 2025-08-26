@@ -1,0 +1,90 @@
+.carreiras {
+  padding: 60px 20px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background: #0b2c44;
+}
+
+.header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  color: #c2b6b6;
+}
+
+.header p {
+  max-width: 800px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+  color: #c2b6b6;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background: #fff;
+  border: 2px solid #d7e6f7;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.iconWrapper {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+.icon {
+  background: #3b82f6;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card h3 {
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #1c1c1c;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+  line-height: 1.5;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
